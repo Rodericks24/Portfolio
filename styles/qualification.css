@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.education{
+    width:100%;
+    min-height: 100vh;
+    background: #6E1EE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qualification{
+    width: 100%;
+    padding: 35px 10%;   
+}
+.qualification{
+    padding-right: calc(10% - 30px);
+}
+
+.qualification .row-qualify{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:20px;
+}
+.col-qualify .title-qualify{
+    font-family: helvetica;
+    color:#fff;
+    padding: 0px 0px 20px 30px;
+}
+.col-qualify .qualify-contents{
+    padding: 0px 27px;
+    border-left:2px solid #000;
+}
+.col-qualify .qualify-contents .qualify-box{
+    position: relative;
+    width: 120%;
+    height: 18vh;
+    padding: 20px;
+    border: 2px solid lightskyblue;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col-qualify .qualify-contents  .qualify-box:hover{
+    box-shadow: 0px 3px 12px 0px darkslateblue;
+    border: 1px solid transparent;
+}
+.col-qualify .qualify-contents  .qualify-box::before{
+    content: '';
+    position: absolute;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top:0;
+    margin-top: 20px;
+    background-color:#D33860;
+    border: 2px solid white;
+}
+.qualify-box h4{
+    position: relative;
+    color: orangered;
+    font-size: 16px;
+}
+.qualify-box h3{
+    font-size: 15px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+    margin-top: 1%;
+}
+.qualify-box h3 span{
+    color: red;
+} 
+.qualify-box p{
+    line-height: 1.2;
+    color: #000;
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: -1%;
+
+}
+/*responsive*/
+@media(max-width:768px){
+    .qualification .row-qualify{
+        grid-template-columns: 1fr;
+    }
+    .row-qualify .col-qualify:nth-child(2){
+        margin-top: 30px;
+    }
+    .col-qualify .qualify-contents .qualify-box{
+        width: 100%;
+    }
+    .qualify-box p{
+        font-size: 70%;
+    }
+}
+
+/*tablet*/
+@media only  screen and (min-width:768px){
+    .qualify-box p{
+        font-size: 130%;
+    }
+    .qualify-box h3{
+        font-size: 130%;
+    }
+    .qualify-box h4{
+        font-size: 130%;
+    }
+}
+/*desktop*/
+@media only  screen and (min-width:768px){
+    .qualify-box p{
+        font-size: 17px;
+    }
+    .qualify-box h3{
+        font-size: 15px;
+    }
+    .qualify-box h4{
+        font-size: 16px;
+    }
+}

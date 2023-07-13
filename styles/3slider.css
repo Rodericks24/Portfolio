@@ -1,0 +1,131 @@
+
+* { box-sizing: border-box; }
+
+.myprojects h2{
+    text-align: center;
+    font-size: 180%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 4%;
+    color: white;
+}
+.myprojects{
+    width:100%;
+    height:75vh;
+    background-color: #161922;
+}
+
+.carousel {
+  background: #EEE;
+  margin-top: 1%;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+#ball{
+    background-image: url('../images/movingball.gif');
+    background-size: cover;
+    background-position: center;
+}
+#random-walk{
+    background-image: url('../images/randomwalk.gif');
+    background-size: cover;
+    background-position: center;
+}
+#pacman{
+        background-image: url('../images/pacman.gif');
+        background-size: cover;
+        background-position: center;
+}
+#boston{
+    background-image: url('../images/boston.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#word-count{
+    background-image: url('../images/1671030788111.png');
+    background-size: cover;
+    background-position: center;
+}
+#pac-men{
+    background-image: url('../images/Pacmen.gif');
+    background-size: cover;
+    background-position: center;
+}
+#eye-ball{
+    background-image: url('../images/Eye\ movement.gif');
+    background-size: cover;
+    background-position: center;
+}
+#Hanoi-tower{
+    background-image: url('../images/Hanoitower.gif');
+    background-size: cover;
+    background-position: center;
+}
+.carousel h2{
+    text-align: center;
+    margin-top: 30%;
+}
+#random-walk h2{
+    color:crimson;
+    margin-top: 32%;
+}
+#pacman h2{
+    margin-top: 40%;
+    color: red;
+}
+#ball h2{
+    margin-top: 40%;
+    color: darkslateblue;
+}
+#word-count h2{
+    margin-top: 40%;
+    color: gold;
+}
+#boston h2{
+    margin-top: 40%;
+    color:crimson;
+}
+#pac-men h2{
+    margin-top: 40%;
+    color:crimson;
+}
+#eye-ball h2{
+    margin-top: 40%;
+    color:whitesmoke;
+}
+#Hanoi-tower h2{
+    margin-top: 40%;
+    color:#D33860;
+}
+@media only screen and (max-width:600px){
+    #projects{
+        height: 40vh;
+    }
+    #projects h2{
+        font-size: 100%;
+        padding-top: 10px;
+    }
+}
+@media only screen and (max-width:400px){
+    #projects{
+        height: 45vh;
+    }
+}
+/*tablet*/
+@media only  screen and (min-width:768px){
+    #projects{
+        height: 40vh;
+    }
+} 
+/*desktop*/
+@media only  screen and (min-width:1280px){
+    #projects{
+        height: 75vh;
+    }
+}
